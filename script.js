@@ -20,6 +20,9 @@ buttons.map( button => {
                    display.innerText = display.innerText.slice(0, -1);
                 }
                 break;
+            case '%':
+                display.innerText = display.innerText / 100;
+                break;
             default:
                 display.innerText += event.target.innerText;
         }
